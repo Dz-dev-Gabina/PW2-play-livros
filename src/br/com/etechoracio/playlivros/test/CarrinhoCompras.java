@@ -18,6 +18,20 @@ public class CarrinhoCompras {
         primeioLivro.preco = 67.67;
         primeioLivro.resumo = "Entenda mais: Mentes geniais que criaram  o Brawl Stars";
 
+        primeioLivro.exibir();
 
+        // Segundo Livro
+
+        Livro segundolivro = new Livro();
+        segundolivro.titulo = "O segredo por tras do Francisco";
+        segundolivro.autor = "Todo mundo menos o Francisco";
+        segundolivro.narrador = "Francisco Pai";
+        segundolivro.editora = "Global, todo mundo menos o Francisco";
+        segundolivro.duracao = LocalTime.of(6, 7);
+        segundolivro.versao = VersaoEnum.INTEGRAL;
+        segundolivro.preco = 10.00;
+        segundolivro.resumo = "Entenda mais sobre um mundo que todos conhecem: o Francisco";
+
+        segundolivro.exibir();
     }
 }

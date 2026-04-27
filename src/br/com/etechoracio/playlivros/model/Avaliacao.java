@@ -10,4 +10,10 @@ public class Avaliacao {
     public Usuario usuario;  /// Composição || agregação
     public boolean aprovado;
 
+    public void exibirDados(){
+        System.out.println(usuario.nome);
+        System.out.println(estrelas + " estrelas " + titulo );
+        System.out.println("Avaliado em: " + data);
+        System.out.println(comentario);
+    }
 }

@@ -14,5 +14,13 @@ public class Livro {
     public VersaoEnum versao;
     public double preco;
     public String resumo;
+
+    public void exibir(){
+        System.out.println("===============================================");
+        System.out.println("Titulo: " + titulo);
+        System.out.println("Autor: " + autor);
+        System.out.println("Narrador: " + narrador);
+        System.out.println("Editora: " + editora);
+    }
 }
  
