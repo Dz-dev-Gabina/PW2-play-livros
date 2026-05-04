@@ -25,4 +25,19 @@ public class Avaliacao {
         String resultado = formatador.format(data);
         return resultado; // return
     }
+    // Definido estrtela = nota
+    public void adicionar(int nota) {
+        this.estrelas = nota;
+    }
+
+    public void adicionar(int nota, String comentario){
+        this.estrelas = nota;
+        this.comentario = comentario;
+    }
+
+    public void adicionar(int nota, String titulo, String comentario){
+        this.estrelas = nota;
+        this.titulo = titulo;
+        this.comentario = comentario;
+    }
 }

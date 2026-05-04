@@ -10,16 +10,24 @@ public class TestaAvaliacao {
         Usuario horacio =  new Usuario();
         horacio.nome = "Horacio Augusto da Silveira";
 
+        Usuario renata = new Usuario();
+        renata.nome = "Renata Maciel";
+
         Avaliacao primeiraAvaliacao = new Avaliacao();
         primeiraAvaliacao.usuario = horacio;
-        primeiraAvaliacao.estrelas = 5;
+        primeiraAvaliacao.adicionar(5);
         primeiraAvaliacao.data = LocalDateTime.now();
         primeiraAvaliacao.aprovado = true;
-        primeiraAvaliacao.titulo = "Livro Excelente";
-        primeiraAvaliacao.comentario = "Livro excelente, muito bem escrito. Chegou no prazo e bem embalado";
 
         primeiraAvaliacao.exibirDados();
 
+        Avaliacao segundoAvaliacao = new Avaliacao();
+        segundoAvaliacao.usuario = renata;
+        segundoAvaliacao.adicionar(5,"Bom","Para mim que tenho filho maior que 5 anos, não achei interessante.");
+        segundoAvaliacao.data = LocalDateTime.now();
+        segundoAvaliacao.aprovado = true;
+
+        segundoAvaliacao.exibirDados();
 
     }
 }

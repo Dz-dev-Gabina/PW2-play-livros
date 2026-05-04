@@ -27,7 +27,7 @@ public class CarrinhoCompras {
         Livro segundolivro = new Livro();
         segundolivro.titulo = "O segredo por tras do Francisco";
         segundolivro.autor = "Todo mundo menos o Francisco";
-        segundolivro.narrador = "Francisco Pai";
+        segundolivro.narrador = "Chico Mestre";
         segundolivro.editora = "Global, todo mundo menos o Francisco";
         segundolivro.duracao = LocalTime.of(6, 7);
         segundolivro.versao = VersaoEnum.INTEGRAL;
