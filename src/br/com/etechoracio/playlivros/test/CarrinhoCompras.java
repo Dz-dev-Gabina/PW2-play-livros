@@ -3,6 +3,8 @@ package br.com.etechoracio.playlivros.test;
 import br.com.etechoracio.playlivros.enums.VersaoEnum;
 import br.com.etechoracio.playlivros.model.Livro;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class CarrinhoCompras {
@@ -17,7 +19,7 @@ public class CarrinhoCompras {
         primeioLivro.versao = VersaoEnum.INTEGRAL;
         primeioLivro.preco = 67.67;
         primeioLivro.resumo = "Entenda mais: Mentes geniais que criaram  o Brawl Stars";
-
+        primeioLivro.dataLancamento = LocalDate.now();
         primeioLivro.exibir();
 
         // Segundo Livro
@@ -31,7 +33,7 @@ public class CarrinhoCompras {
         segundolivro.versao = VersaoEnum.INTEGRAL;
         segundolivro.preco = 10.00;
         segundolivro.resumo = "Entenda mais sobre um mundo que todos conhecem: o Francisco";
-
+        segundolivro.dataLancamento = LocalDate.of(2026, 5, 5);
         segundolivro.exibir();
     }
 }
