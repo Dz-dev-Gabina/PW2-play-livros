@@ -1,11 +1,18 @@
 package br.com.etechoracio.playlivros.model;
 
 public class Usuario {
-    public String foto;
-    public String nome;
+    private String foto;
+    private String nome;
 
     public Usuario(String nome) {
         this.nome = nome;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    //public String setNome(){
+    //    this.nome = v1;
+    //}
 }

@@ -9,13 +9,16 @@ public class Avaliacao {
     public LocalDateTime data;
     public String comentario;
     public Usuario usuario;  /// Composição || agregação
-    public boolean aprovado;
+    private boolean aprovado;
 
     public void exibirDados(){
-        System.out.println(usuario.nome);
-        System.out.println(estrelas + " estrelas " + titulo );
-        System.out.println("Avaliado em: " + obterDataPorExtenso());
-        System.out.println(comentario);
+        if (aprovado) {
+            System.out.println("   ");
+            System.out.println(usuario.getnome);
+            System.out.println(estrelas + " estrelas " + titulo );
+            System.out.println("Avaliado em: " + obterDataPorExtenso());
+            System.out.println(comentario);
+        }
     }
 
     // visibilidade retorno nome
@@ -39,5 +42,9 @@ public class Avaliacao {
         this.estrelas = nota;
         this.titulo = titulo;
         this.comentario = comentario;
+    }
+    public void aprovar(){
+        // Verificar se possui termos ofensivos
+        this.aprovado = true;
     }
 }
