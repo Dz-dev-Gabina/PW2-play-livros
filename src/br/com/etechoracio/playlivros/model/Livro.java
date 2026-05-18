@@ -8,15 +8,15 @@ import java.time.LocalTime;
 
 public class Livro {
     //tipo nomeVariavel;
-    public String titulo;
-    public String autor;
-    public String narrador;
-    public String editora;
-    public LocalTime duracao;
-    public VersaoEnum versao;
-    public double preco;
-    public String resumo;
-    public LocalDate dataLancamento;
+    private String titulo;
+    private String autor;
+    private String narrador;
+    private String editora;
+    private LocalTime duracao;
+    private VersaoEnum versao;
+    private double preco;
+    private String resumo;
+    private LocalDate dataLancamento;
 
     public void exibir(){
         System.out.println("===============================================");
@@ -42,6 +42,78 @@ public class Livro {
         else {
             return DisponibilidadeEnum.DISPONIVEL;
         }
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getNarrador() {
+        return narrador;
+    }
+
+    public void setNarrador(String narrador) {
+        this.narrador = narrador;
+    }
+
+    public LocalTime getDuracao() {
+        return duracao;
+    }
+
+    public void setDuracao(LocalTime duracao) {
+        this.duracao = duracao;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getEditora() {
+        return editora;
+    }
+
+    public void setEditora(String editora) {
+        this.editora = editora;
+    }
+
+    public VersaoEnum getVersao() {
+        return versao;
+    }
+
+    public void setVersao(VersaoEnum versao) {
+        this.versao = versao;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public String getResumo() {
+        return resumo;
+    }
+
+    public void setResumo(String resumo) {
+        this.resumo = resumo;
+    }
+
+    public LocalDate getDataLancamento() {
+        return dataLancamento;
+    }
+
+    public void setDataLancamento(LocalDate dataLancamento) {
+        this.dataLancamento = dataLancamento;
     }
 }
  

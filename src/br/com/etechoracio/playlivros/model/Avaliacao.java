@@ -4,11 +4,11 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Avaliacao {
-    public int estrelas;
-    public String titulo;
-    public LocalDateTime data;
-    public String comentario;
-    public Usuario usuario;  /// Composição || agregação
+    private int estrelas;
+    private String titulo;
+    private LocalDateTime data;
+    private String comentario;
+    private Usuario usuario;  /// Composição || agregação
     private boolean aprovado;
 
     public void exibirDados(){
@@ -43,8 +43,25 @@ public class Avaliacao {
         this.titulo = titulo;
         this.comentario = comentario;
     }
+
     public void aprovar(){
         // Verificar se possui termos ofensivos
         this.aprovado = true;
+    }
+
+    public LocalDateTime getData() {
+        return data;
+    }
+
+    public void setData(LocalDateTime data) {
+        this.data = data;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }

@@ -10,9 +10,9 @@ public class TestaAvaliacao {
 
         Avaliacao primeiraAvaliacao = new Avaliacao();
 
-        primeiraAvaliacao.usuario = new Usuario("Horacio Augusto da Silveira");
+        primeiraAvaliacao.getUsuario();
         primeiraAvaliacao.adicionar(5, "Bom","Gostei bastante do livro, parabens!!!");
-        primeiraAvaliacao.data = LocalDateTime.now();
+        primeiraAvaliacao.getData();
         //primeiraAvaliacao.aprovado = true; --> private boolean aprovado; (encapsulamento: colocar os atributos ou métodos como private, para não quebrar as regras)
 
         primeiraAvaliacao.aprovar();
@@ -22,9 +22,9 @@ public class TestaAvaliacao {
         //----------------------------------------------
 
         Avaliacao segundoAvaliacao = new Avaliacao();
-        segundoAvaliacao.usuario = new Usuario("Renata Maciel");
+        segundoAvaliacao.getUsuario();
         segundoAvaliacao.adicionar(5,"Bom","Para mim que tenho filho maior que 5 anos, não achei interessante.");
-        segundoAvaliacao.data = LocalDateTime.now();
+        segundoAvaliacao.getData();
         //segundoAvaliacao.aprovado = false; --> private boolean aprovado; (encapsulamento: colocar os atributos ou métodos como private, para não quebrar as regras)
 
         segundoAvaliacao.aprovar();

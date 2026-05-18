@@ -11,29 +11,29 @@ public class CarrinhoCompras {
     static void main() {
         // Primeiro Livro
         Livro primeioLivro = new Livro();
-        primeioLivro.titulo = "Brawl Stars";
-        primeioLivro.autor = "Supercell";
-        primeioLivro.narrador = "Spike";
-        primeioLivro.editora = "Supercell Books";
-        primeioLivro.duracao = LocalTime.of(6, 7);
-        primeioLivro.versao = VersaoEnum.INTEGRAL;
-        primeioLivro.preco = 67.67;
-        primeioLivro.resumo = "Entenda mais: Mentes geniais que criaram  o Brawl Stars";
-        primeioLivro.dataLancamento = LocalDate.now();
+        primeioLivro.setTitulo("Brawl Stars");
+        primeioLivro.setAutor("Supercell");
+        primeioLivro.setNarrador("Spike");
+        primeioLivro.setEditora("Supercell Books");
+        primeioLivro.setDuracao(LocalTime.of(6, 7));
+        primeioLivro.setVersao(VersaoEnum.INTEGRAL);
+        primeioLivro.setPreco(67.67);
+        primeioLivro.setResumo("Entenda mais: Mentes geniais que criaram  o Brawl Stars");
+        primeioLivro.setDataLancamento(LocalDate.now());
         primeioLivro.exibir();
 
         // Segundo Livro
 
         Livro segundolivro = new Livro();
-        segundolivro.titulo = "O segredo por tras do Francisco";
-        segundolivro.autor = "Todo mundo menos o Francisco";
-        segundolivro.narrador = "Chico Mestre";
-        segundolivro.editora = "Global, todo mundo menos o Francisco";
-        segundolivro.duracao = LocalTime.of(6, 7);
-        segundolivro.versao = VersaoEnum.INTEGRAL;
-        segundolivro.preco = 10.00;
-        segundolivro.resumo = "Entenda mais sobre um mundo que todos conhecem: o Francisco";
-        segundolivro.dataLancamento = LocalDate.of(2026, 5, 5);
+        segundolivro.setTitulo("O segredo por tras do Francisco");
+        segundolivro.setAutor("Todo mundo menos o Francisco");
+        segundolivro.setNarrador("Chico Mestre");
+        segundolivro.setEditora("Global, todo mundo menos o Francisco");
+        segundolivro.setDuracao(LocalTime.of(6, 7));
+        segundolivro.setVersao(VersaoEnum.INTEGRAL);
+        segundolivro.setPreco(10.00);
+        segundolivro.setResumo("Entenda mais sobre um mundo que todos conhecem: o Francisco");
+        segundolivro.setDataLancamento(LocalDate.of(2026, 5, 5));
         segundolivro.exibir();
     }
 }
