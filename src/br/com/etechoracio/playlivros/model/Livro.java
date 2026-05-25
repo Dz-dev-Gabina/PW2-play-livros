@@ -11,7 +11,7 @@ public class Livro {
     private String titulo;
     private String autor;
     private String editora;
-    private double preco;
+    protected double preco;
     private String resumo;
     private LocalDate dataLancamento;
 

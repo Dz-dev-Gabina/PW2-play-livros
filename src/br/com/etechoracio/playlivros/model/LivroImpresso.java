@@ -6,4 +6,8 @@ public class LivroImpresso extends Livro {
     public void setPaginas(int paginas) {
         this.paginas = paginas;
     }
+
+    public double getTaxaEnvio() {
+        return preco * 0.07;
+    }
 }
