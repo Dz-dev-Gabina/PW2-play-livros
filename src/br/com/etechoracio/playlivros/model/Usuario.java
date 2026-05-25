@@ -11,8 +11,4 @@ public class Usuario {
     public String getNome() {
         return nome;
     }
-
-    //public String setNome(){
-    //    this.nome = v1;
-    //}
 }
