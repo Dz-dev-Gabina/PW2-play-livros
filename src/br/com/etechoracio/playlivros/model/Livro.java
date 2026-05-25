@@ -87,5 +87,9 @@ public class Livro {
     public void setDataLancamento(LocalDate dataLancamento) {
         this.dataLancamento = dataLancamento;
     }
+
+    public double getTotal() {
+        return preco;
+    }
 }
  
