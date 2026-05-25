@@ -10,10 +10,7 @@ public class Livro {
     //tipo nomeVariavel;
     private String titulo;
     private String autor;
-    private String narrador;
     private String editora;
-    private LocalTime duracao;
-    private VersaoEnum versao;
     private double preco;
     private String resumo;
     private LocalDate dataLancamento;
@@ -22,7 +19,6 @@ public class Livro {
         System.out.println("===============================================");
         System.out.println("Titulo: " + titulo);
         System.out.println("Autor: " + autor);
-        System.out.println("Narrador: " + narrador);
         System.out.println("Editora: " + editora);
         System.out.println("Situação: " + obterDisponibilidade());
     }
@@ -52,22 +48,6 @@ public class Livro {
         this.titulo = titulo;
     }
 
-    public String getNarrador() {
-        return narrador;
-    }
-
-    public void setNarrador(String narrador) {
-        this.narrador = narrador;
-    }
-
-    public LocalTime getDuracao() {
-        return duracao;
-    }
-
-    public void setDuracao(LocalTime duracao) {
-        this.duracao = duracao;
-    }
-
     public String getAutor() {
         return autor;
     }
@@ -82,14 +62,6 @@ public class Livro {
 
     public void setEditora(String editora) {
         this.editora = editora;
-    }
-
-    public VersaoEnum getVersao() {
-        return versao;
-    }
-
-    public void setVersao(VersaoEnum versao) {
-        this.versao = versao;
     }
 
     public double getPreco() {

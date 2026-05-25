@@ -1,6 +1,7 @@
 package br.com.etechoracio.playlivros.test;
 
 import br.com.etechoracio.playlivros.enums.VersaoEnum;
+import br.com.etechoracio.playlivros.model.AudioBook;
 import br.com.etechoracio.playlivros.model.Livro;
 
 import java.time.LocalDate;
@@ -10,7 +11,7 @@ import java.time.LocalTime;
 public class CarrinhoCompras {
     static void main() {
         // Primeiro Livro
-        Livro primeioLivro = new Livro();
+        AudioBook primeioLivro = new AudioBook();
         primeioLivro.setTitulo("Brawl Stars");
         primeioLivro.setAutor("Supercell");
         primeioLivro.setNarrador("Spike");
@@ -24,7 +25,7 @@ public class CarrinhoCompras {
 
         // Segundo Livro
 
-        Livro segundolivro = new Livro();
+        AudioBook segundolivro = new AudioBook();
         segundolivro.setTitulo("O segredo por tras do Francisco");
         segundolivro.setAutor("Todo mundo menos o Francisco");
         segundolivro.setNarrador("Chico Mestre");
