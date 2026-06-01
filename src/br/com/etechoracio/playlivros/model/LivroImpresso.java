@@ -11,7 +11,6 @@ public class LivroImpresso extends Livro {
         return preco * 0.07;
     }
 
-    @Override
     public double getTotal() {
         return super.getTotal() + getTaxaEnvio();
     }

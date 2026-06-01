@@ -2,6 +2,7 @@ package br.com.etechoracio.playlivros.test;
 
 import br.com.etechoracio.playlivros.enums.VersaoEnum;
 import br.com.etechoracio.playlivros.model.AudioBook;
+import br.com.etechoracio.playlivros.model.Livro;
 import br.com.etechoracio.playlivros.model.SacolaDeCompras;
 
 import java.time.LocalDate;
