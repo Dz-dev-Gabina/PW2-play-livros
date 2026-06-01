@@ -8,7 +8,7 @@ public class Avaliacao {
     private String titulo;
     private LocalDateTime data;
     private String comentario;
-    private Usuario usuario;  /// Composição || agregação
+    private Usuario usuario;  // Composição || agregação
     private boolean aprovado;
 
     public void exibirDados(){
