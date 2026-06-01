@@ -11,6 +11,11 @@ public class LivroImpresso extends Livro {
         return preco * 0.07;
     }
 
+    @Override
+    protected void exibirDetalhes() {
+        System.out.println("Paginas: " + paginas);
+    }
+
     public double getTotal() {
         return super.getTotal() + getTaxaEnvio();
     }
