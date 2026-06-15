@@ -3,6 +3,7 @@ package br.com.etechoracio.playlivros.test;
 import br.com.etechoracio.playlivros.enums.VersaoEnum;
 import br.com.etechoracio.playlivros.model.AudioBook;
 import br.com.etechoracio.playlivros.model.Livro;
+import br.com.etechoracio.playlivros.model.Pocket;
 import br.com.etechoracio.playlivros.model.SacolaDeCompras;
 
 import java.time.LocalDate;
@@ -67,5 +68,15 @@ public class CarrinhoCompras {
         sacola.adicionar(terceirolivro);
         sacola.adicionar(quartolivro);
         sacola.exibirTotal();
+
+        Pocket quintoLivro = new Pocket();
+        quintoLivro.setTitulo("O Pequeno Príncipe");
+        quintoLivro.setAutor("Exupéry Antoine de Saint");
+        quintoLivro.setEditora("Editora Lafonte");
+        quintoLivro.setPreco(15.00);
+        quintoLivro.setPaginas(96);
+        quintoLivro.setLargura(13.5);
+        quintoLivro.setAltura(20.5);
+        quintoLivro.setResumo("O livro conta a história do complexo Pequeno Príncipe.");
     }
 }
