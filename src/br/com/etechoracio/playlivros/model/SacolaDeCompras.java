@@ -1,10 +1,12 @@
 package br.com.etechoracio.playlivros.model;
 
+import br.com.etechoracio.playlivros.interfaces.Publicacao;
+
 public class SacolaDeCompras {
     private double total;
 
-    public void adicionar(Livro livro){
-        total += livro.getTotal();
+    public void adicionar(Publicacao item){
+        total += item.getPreco();
     }
 
     public void exibirTotal(){

@@ -16,7 +16,7 @@ public class LivroImpresso extends Livro {
         System.out.println("Paginas: " + paginas);
     }
 
-    public double getTotal() {
-        return super.getTotal() + getTaxaEnvio();
+    public double getPreco() {
+        return preco + getTaxaEnvio();
     }
 }
